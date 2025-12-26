@@ -13,7 +13,7 @@ import (
 func OpenServerConn() {
 	// var tcpAddr globals.tcpServerAddr{}
 
-	fmt.Println("Server launching motherFuckers")
+	fmt.Println("Server launching ")
 
 	listner, err := net.Listen("tcp", "localhost:")
 
@@ -51,7 +51,7 @@ func acceptClientsRequest(listener net.Listener) {
 			for {
 				if dataSize > 4096 {
 					// TODO make a response with packet exceeds limit
-					fmt.Println("Packet big as your mom", dataSize)
+					fmt.Println("Packet exceeded the limit", dataSize)
 					return
 				}
 

@@ -32,7 +32,7 @@ func parseRequestLine(data []byte, done bool) (*requestLine, bool, error) {
 		parts := bytes.Split(line, []byte(" ")) 
 
 		if len(parts) != 3 {
-			return nil, false, errors.New("INVALID HTTP REQUEST.. CLIENT SEND THE CORRECT HTTP PACKET AFTER VARIFYING IT WITH YOUR DADDY") 
+			return nil, false, errors.New("INVALID HTTP REQUEST.. CLIENT SEND THE CORRECT HTTP PACKET AFTER VARIFYING IT ") 
 		}
 
 
